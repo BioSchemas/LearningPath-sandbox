@@ -1,5 +1,13 @@
 # Learning Path sandbox
 
+authors: Phil Reed, Alban Gaignard
+
+drafted the 20th of November 2025, as part of Bioschemas activities
+
+To be revised by the community.
+
+Any questions, please contact phil.reed@manchester.ac.uk, alban.gaignard@univ-nantes.fr
+
 ## Aim of the repo
 Report experiments to model Learning Paths with Schema.org ontology. 
 
