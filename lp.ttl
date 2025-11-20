@@ -1,0 +1,72 @@
+@prefix ex: <http://example.org/> .
+@prefix schema: <https://schema.org/> .
+
+ex:GA_learning_path a schema:Course,
+        schema:HowTo ;
+    schema:courseCode "GSA101" ;
+    schema:description "A foundational course for Galaxy and Sequence analysis." ;
+    schema:name "Introduction to Galaxy and Sequence analysis" ;
+    schema:provider ex:ExampleUniversity ;
+    schema:step ex:Module_1,
+        ex:Module_2 .
+
+ex:Module_1 a schema:Course,
+        schema:HowToSection ;
+    schema:itemListElement ex:TM11,
+        ex:TM12,
+        ex:TM3 ;
+    schema:name "Module 1" ;
+    schema:nextItem ex:Module_2 .
+
+ex:TM11 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 11" ;
+    schema:name "TrainingMaterial 11" ;
+    schema:nextItem ex:TM12 ;
+    schema:url "https://tess.elixir-europe.org/materials/hands-on-for-a-short-introduction-to-galaxy-tutorial?lp=1%3A1" .
+
+ex:TM12 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 12" ;
+    schema:name "TrainingMaterial 12" ;
+    schema:nextItem ex:Module_2,
+        ex:TM21,
+        ex:TM3 .
+
+ex:TM21 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 21" ;
+    schema:name "TrainingMaterial 21" ;
+    schema:nextItem ex:TM22 .
+
+ex:TM22 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 22" ;
+    schema:name "TrainingMaterial 22" ;
+    schema:nextItem ex:TM23 .
+
+ex:TM23 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 23" ;
+    schema:name "TrainingMaterial 23" ;
+    schema:nextItem ex:TM24 .
+
+ex:TM24 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:description "Description of TrainingMaterial 24" ;
+    schema:name "TrainingMaterial 24" ;
+    schema:nextItem ex:TM3 .
+
+ex:Module_2 a schema:Course,
+        schema:HowToSection ;
+    schema:itemListElement ex:TM21,
+        ex:TM22,
+        ex:TM23,
+        ex:TM24,
+        ex:TM3 ;
+    schema:name "Module 2" .
+
+ex:TM3 a schema:HowToStep,
+        schema:LearningResource ;
+    schema:name "TrainingMaterial shared by Module 1 and 2" .
+
