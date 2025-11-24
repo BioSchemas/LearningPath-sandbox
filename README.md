@@ -118,13 +118,13 @@ N0 -- step --> N1
 
 ## Schema structure
 
-We propose two new Bioschemas profiles and a small change to one Bioschemas profile:
+We propose two new Bioschemas profiles and a small change to [one Bioschemas profile](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE):
 
 - `LearningPath`: inherits from `Course` and `HowTo`
 - `LearningPathTopic`: inherits from `Course` and `HowToSection`
 - `TrainingMaterial`: inherits from `LearningResource` and `HowToStep`
 
-A `LearningPath` has one or more `LearningPathTopic`. A `LearningPathTopic` has one or more `TrainingMaterial`. These relationships are (ordered) lists or steps, using the `HowTo` Schema.org type.
+A `LearningPath` has zero or more `LearningPathTopic`. A `LearningPathTopic` has zero or more `TrainingMaterial`. These relationships are (ordered) lists or steps, using the `HowTo` Schema.org type.
 
 Class diagram:
 ```mermaid
