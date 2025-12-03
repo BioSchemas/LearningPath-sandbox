@@ -2,8 +2,7 @@
   {
     "@id": "http://example.org/GA_learning_path",
     "@type": [
-      "https://schema.org/Course",
-      "https://schema.org/HowTo"
+      "https://schema.org/Course"
     ],
     "https://schema.org/courseCode": [
       {
@@ -12,7 +11,7 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "A foundational course for Galaxy and Sequence analysis."
+        "@value": "This learning path aims to teach you the basics of Galaxy and analysis of sequencing data. "
       }
     ],
     "https://schema.org/name": [
@@ -25,7 +24,7 @@
         "@id": "http://example.org/ExampleUniversity"
       }
     ],
-    "https://schema.org/step": [
+    "https://schema.org/syllabusSections": [
       {
         "@id": "http://example.org/Module_2"
       },
@@ -38,16 +37,16 @@
     "@id": "http://example.org/TM21",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 21"
+        "@value": "Ensure you follow quality control practices"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 21"
+        "@value": "(2.1) Quality Control"
       }
     ],
     "https://schema.org/nextItem": [
@@ -59,8 +58,10 @@
   {
     "@id": "http://example.org/Module_1",
     "@type": [
-      "https://schema.org/HowToSection",
-      "https://schema.org/Course"
+      "https://schema.org/Syllabus",
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
     ],
     "https://schema.org/itemListElement": [
       {
@@ -75,12 +76,29 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "Module 1"
+        "@value": "Module 1: Introduction to Galaxy"
       }
     ],
     "https://schema.org/nextItem": [
       {
         "@id": "http://example.org/Module_2"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Learn how to create a workflow"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/TM3",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(3) TrainingMaterial shared by Module 1 and 2"
       }
     ]
   },
@@ -88,16 +106,16 @@
     "@id": "http://example.org/TM11",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 11"
+        "@value": "What is Galaxy"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 11"
+        "@value": "(1.1) A short introduction to Galaxy"
       }
     ],
     "https://schema.org/nextItem": [
@@ -112,31 +130,19 @@
     ]
   },
   {
-    "@id": "http://example.org/TM3",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "TrainingMaterial shared by Module 1 and 2"
-      }
-    ]
-  },
-  {
     "@id": "http://example.org/TM12",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 12"
+        "@value": "The basic details for Galaxy genomics"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 12"
+        "@value": "(1.2) Galaxy Basics for genomics"
       }
     ],
     "https://schema.org/nextItem": [
@@ -154,8 +160,10 @@
   {
     "@id": "http://example.org/Module_2",
     "@type": [
-      "https://schema.org/HowToSection",
-      "https://schema.org/Course"
+      "https://schema.org/Syllabus",
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
     ],
     "https://schema.org/itemListElement": [
       {
@@ -176,7 +184,12 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "Module 2"
+        "@value": "Module 2: Basics of Genome Sequence Analysis"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Use genome browser to understand your data"
       }
     ]
   },
@@ -184,16 +197,16 @@
     "@id": "http://example.org/TM22",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 22"
+        "@value": "Alignment and mapping"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 22"
+        "@value": "(2.2) Mapping"
       }
     ],
     "https://schema.org/nextItem": [
@@ -206,7 +219,7 @@
     "@id": "http://example.org/TM24",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
@@ -215,7 +228,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 24"
+        "@value": "(2.4) TrainingMaterial 24"
       }
     ],
     "https://schema.org/nextItem": [
@@ -228,7 +241,7 @@
     "@id": "http://example.org/TM23",
     "@type": [
       "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
@@ -237,7 +250,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 23"
+        "@value": "(2.3) An Introduction to Genome Assembly"
       }
     ],
     "https://schema.org/nextItem": [
