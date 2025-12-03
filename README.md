@@ -21,6 +21,25 @@ A jupyter notebook showing :
 
 ## Results 
 A sample Learning path: 
+
+https://tess.elixir-europe.org/learning_paths/introduction-to-galaxy-and-sequence-analysis-6384c0ed-3546-41cf-ac30-bff8680dd96c
+
+LP structure: 
+
+**Introduction to Galaxy and Sequence analysis** [syllabusSections=M1,M2]
+- **Module 1: Introduction to Galaxy** [itemListElement=11,12,3] [nextItem=M2]
+  - (1.1) A short introduction to Galaxy [nextItem=12]
+  - (1.2) Galaxy Basics for genomics [nextItem=21,3]
+  - _(3) Review - TrainingMaterial shared by Module 1 and 2_
+- **Module 2: Basics of Genome Sequence Analysis** [itemListElement=11,12,3]
+  - (2.1) Quality Control [nextItem=22]
+  - (2.2) Mapping [nextItem=23]
+  - (2.3) An Introduction to Genome Assembly [nextItem=24]
+  - (2.4) Chloroplast genome assembly [nextItem=3]
+  - (3) Review - TrainingMaterial shared by Module 1 and 2
+
+We have taken a real learning path from GTN and added a fictional material to the end of each module, to ensure that everything still works if a training material appears in more than one module (such as introduction or review). This fictional material is defined once in the RDF but will be rendered twice in the HTML.
+
 ```turtle
 ex:GA_learning_path a schema:Course ;
     schema:courseCode "GSA101" ;
@@ -52,8 +71,7 @@ ex:TM12 a schema:LearningResource,
         schema:ListItem ;
     schema:description "The basic details for Galaxy genomics" ;
     schema:name "(1.2) Galaxy Basics for genomics" ;
-    schema:nextItem ex:Module_2,
-        ex:TM21,
+    schema:nextItem ex:TM21,
         ex:TM3 .
 ```
 
