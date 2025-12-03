@@ -34,24 +34,24 @@
     ]
   },
   {
-    "@id": "http://example.org/TM21",
+    "@id": "http://example.org/TM23",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Ensure you follow quality control practices"
+        "@value": "Description of TrainingMaterial 23"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(2.1) Quality Control"
+        "@value": "(2.3) An Introduction to Genome Assembly"
       }
     ],
     "https://schema.org/nextItem": [
       {
-        "@id": "http://example.org/TM22"
+        "@id": "http://example.org/TM24"
       }
     ]
   },
@@ -91,18 +91,6 @@
     ]
   },
   {
-    "@id": "http://example.org/TM3",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/ListItem"
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "(3) TrainingMaterial shared by Module 1 and 2"
-      }
-    ]
-  },
-  {
     "@id": "http://example.org/TM11",
     "@type": [
       "https://schema.org/LearningResource",
@@ -130,6 +118,18 @@
     ]
   },
   {
+    "@id": "http://example.org/TM3",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(3) Review - TrainingMaterial shared by Module 1 and 2"
+      }
+    ]
+  },
+  {
     "@id": "http://example.org/TM12",
     "@type": [
       "https://schema.org/LearningResource",
@@ -146,9 +146,6 @@
       }
     ],
     "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/Module_2"
-      },
       {
         "@id": "http://example.org/TM21"
       },
@@ -228,7 +225,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "(2.4) TrainingMaterial 24"
+        "@value": "(2.4) Chloroplast genome assembly"
       }
     ],
     "https://schema.org/nextItem": [
@@ -238,24 +235,24 @@
     ]
   },
   {
-    "@id": "http://example.org/TM23",
+    "@id": "http://example.org/TM21",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 23"
+        "@value": "Ensure you follow quality control practices"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(2.3) An Introduction to Genome Assembly"
+        "@value": "(2.1) Quality Control"
       }
     ],
     "https://schema.org/nextItem": [
       {
-        "@id": "http://example.org/TM24"
+        "@id": "http://example.org/TM22"
       }
     ]
   }

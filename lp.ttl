@@ -27,12 +27,23 @@ ex:TM11 a schema:LearningResource,
     schema:nextItem ex:TM12 ;
     schema:url "https://tess.elixir-europe.org/materials/hands-on-for-a-short-introduction-to-galaxy-tutorial?lp=1%3A1" .
 
+ex:Module_2 a schema:Course,
+        schema:ItemList,
+        schema:ListItem,
+        schema:Syllabus ;
+    schema:itemListElement ex:TM21,
+        ex:TM22,
+        ex:TM23,
+        ex:TM24,
+        ex:TM3 ;
+    schema:name "Module 2: Basics of Genome Sequence Analysis" ;
+    schema:teaches "Use genome browser to understand your data" .
+
 ex:TM12 a schema:LearningResource,
         schema:ListItem ;
     schema:description "The basic details for Galaxy genomics" ;
     schema:name "(1.2) Galaxy Basics for genomics" ;
-    schema:nextItem ex:Module_2,
-        ex:TM21,
+    schema:nextItem ex:TM21,
         ex:TM3 .
 
 ex:TM21 a schema:LearningResource,
@@ -56,22 +67,10 @@ ex:TM23 a schema:LearningResource,
 ex:TM24 a schema:LearningResource,
         schema:ListItem ;
     schema:description "Description of TrainingMaterial 24" ;
-    schema:name "(2.4) TrainingMaterial 24" ;
+    schema:name "(2.4) Chloroplast genome assembly" ;
     schema:nextItem ex:TM3 .
-
-ex:Module_2 a schema:Course,
-        schema:ItemList,
-        schema:ListItem,
-        schema:Syllabus ;
-    schema:itemListElement ex:TM21,
-        ex:TM22,
-        ex:TM23,
-        ex:TM24,
-        ex:TM3 ;
-    schema:name "Module 2: Basics of Genome Sequence Analysis" ;
-    schema:teaches "Use genome browser to understand your data" .
 
 ex:TM3 a schema:LearningResource,
         schema:ListItem ;
-    schema:name "(3) TrainingMaterial shared by Module 1 and 2" .
+    schema:name "(3) Review - TrainingMaterial shared by Module 1 and 2" .
 
