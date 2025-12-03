@@ -1,106 +1,5 @@
 [
   {
-    "@id": "http://example.org/Module_2",
-    "@type": [
-      "https://schema.org/HowToSection",
-      "https://schema.org/Course"
-    ],
-    "https://schema.org/itemListElement": [
-      {
-        "@id": "http://example.org/TM21"
-      },
-      {
-        "@id": "http://example.org/TM22"
-      },
-      {
-        "@id": "http://example.org/TM23"
-      },
-      {
-        "@id": "http://example.org/TM24"
-      },
-      {
-        "@id": "http://example.org/TM3"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Module 2"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/TM23",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Description of TrainingMaterial 23"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "TrainingMaterial 23"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/TM24"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/Module_1",
-    "@type": [
-      "https://schema.org/HowToSection",
-      "https://schema.org/Course"
-    ],
-    "https://schema.org/itemListElement": [
-      {
-        "@id": "http://example.org/TM11"
-      },
-      {
-        "@id": "http://example.org/TM12"
-      },
-      {
-        "@id": "http://example.org/TM3"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Module 1"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/Module_2"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/TM21",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Description of TrainingMaterial 21"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "TrainingMaterial 21"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/TM22"
-      }
-    ]
-  },
-  {
     "@id": "http://example.org/GA_learning_path",
     "@type": [
       "https://schema.org/Course",
@@ -136,6 +35,56 @@
     ]
   },
   {
+    "@id": "http://example.org/TM21",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/HowToStep"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Description of TrainingMaterial 21"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "TrainingMaterial 21"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/TM22"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/Module_1",
+    "@type": [
+      "https://schema.org/HowToSection",
+      "https://schema.org/Course"
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/TM11"
+      },
+      {
+        "@id": "http://example.org/TM12"
+      },
+      {
+        "@id": "http://example.org/TM3"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Module 1"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/Module_2"
+      }
+    ]
+  },
+  {
     "@id": "http://example.org/TM11",
     "@type": [
       "https://schema.org/LearningResource",
@@ -163,24 +112,14 @@
     ]
   },
   {
-    "@id": "http://example.org/TM24",
+    "@id": "http://example.org/TM3",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/HowToStep"
     ],
-    "https://schema.org/description": [
-      {
-        "@value": "Description of TrainingMaterial 24"
-      }
-    ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial 24"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/TM3"
+        "@value": "TrainingMaterial shared by Module 1 and 2"
       }
     ]
   },
@@ -213,14 +152,31 @@
     ]
   },
   {
-    "@id": "http://example.org/TM3",
+    "@id": "http://example.org/Module_2",
     "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/HowToStep"
+      "https://schema.org/HowToSection",
+      "https://schema.org/Course"
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/TM21"
+      },
+      {
+        "@id": "http://example.org/TM22"
+      },
+      {
+        "@id": "http://example.org/TM23"
+      },
+      {
+        "@id": "http://example.org/TM24"
+      },
+      {
+        "@id": "http://example.org/TM3"
+      }
     ],
     "https://schema.org/name": [
       {
-        "@value": "TrainingMaterial shared by Module 1 and 2"
+        "@value": "Module 2"
       }
     ]
   },
@@ -243,6 +199,50 @@
     "https://schema.org/nextItem": [
       {
         "@id": "http://example.org/TM23"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/TM24",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/HowToStep"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Description of TrainingMaterial 24"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "TrainingMaterial 24"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/TM3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/TM23",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/HowToStep"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Description of TrainingMaterial 23"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "TrainingMaterial 23"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/TM24"
       }
     ]
   }
