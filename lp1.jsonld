@@ -1,5 +1,42 @@
 [
   {
+    "@id": "http://example.org/Module_2",
+    "@type": [
+      "https://schema.org/Syllabus",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/TM21"
+      },
+      {
+        "@id": "http://example.org/TM22"
+      },
+      {
+        "@id": "http://example.org/TM23"
+      },
+      {
+        "@id": "http://example.org/TM24"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Module 2: Basics of Genome Sequence Analysis"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Use genome browser to understand your data"
+      }
+    ]
+  },
+  {
     "@id": "http://example.org/GA_learning_path",
     "@type": [
       "https://schema.org/Course"
@@ -39,7 +76,7 @@
     ]
   },
   {
-    "@id": "http://example.org/TM23",
+    "@id": "http://example.org/TM11",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
@@ -51,17 +88,22 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 23"
+        "@value": "What is Galaxy"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(2.3) An Introduction to Genome Assembly"
+        "@value": "(1.1) A short introduction to Galaxy"
       }
     ],
     "https://schema.org/nextItem": [
       {
-        "@id": "http://example.org/TM24"
+        "@id": "http://example.org/TM12"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://tess.elixir-europe.org/materials/hands-on-for-a-short-introduction-to-galaxy-tutorial?lp=1%3A1"
       }
     ]
   },
@@ -102,7 +144,7 @@
     ]
   },
   {
-    "@id": "http://example.org/TM11",
+    "@id": "http://example.org/TM23",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
@@ -114,86 +156,39 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "What is Galaxy"
+        "@value": "Description of TrainingMaterial 23"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(1.1) A short introduction to Galaxy"
+        "@value": "(2.3) An Introduction to Genome Assembly"
       }
     ],
     "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/TM12"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@value": "https://tess.elixir-europe.org/materials/hands-on-for-a-short-introduction-to-galaxy-tutorial?lp=1%3A1"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/TM12",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/ListItem"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "The basic details for Galaxy genomics"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "(1.2) Galaxy Basics for genomics"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://example.org/TM21"
-      }
-    ]
-  },
-  {
-    "@id": "http://example.org/Module_2",
-    "@type": [
-      "https://schema.org/Syllabus",
-      "https://schema.org/ListItem",
-      "https://schema.org/ItemList"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/LearningPathModule"
-      }
-    ],
-    "https://schema.org/itemListElement": [
-      {
-        "@id": "http://example.org/TM21"
-      },
-      {
-        "@id": "http://example.org/TM22"
-      },
-      {
-        "@id": "http://example.org/TM23"
-      },
       {
         "@id": "http://example.org/TM24"
       }
+    ]
+  },
+  {
+    "@id": "http://example.org/TM24",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Description of TrainingMaterial 24"
+      }
     ],
     "https://schema.org/name": [
       {
-        "@value": "Module 2: Basics of Genome Sequence Analysis"
-      }
-    ],
-    "https://schema.org/teaches": [
-      {
-        "@value": "Use genome browser to understand your data"
+        "@value": "(2.4) Chloroplast genome assembly"
       }
     ]
   },
@@ -225,7 +220,7 @@
     ]
   },
   {
-    "@id": "http://example.org/TM24",
+    "@id": "http://example.org/TM12",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
@@ -237,12 +232,17 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "Description of TrainingMaterial 24"
+        "@value": "The basic details for Galaxy genomics"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(2.4) Chloroplast genome assembly"
+        "@value": "(1.2) Galaxy Basics for genomics"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/TM21"
       }
     ]
   },
