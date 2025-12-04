@@ -72,42 +72,42 @@ ex:TM11 a schema:LearningResource,
 And the complete diagram: 
 ```mermaid
 graph TD
-N2["(1.1) A short introduction to Galaxy"]
-N3["(1.2) Galaxy Basics for genomics"]
-N2 -- nextItem --> N3
-N7["(2.3) An Introduction to Genome Assembly"]
-N8["(2.4) Chloroplast genome assembly"]
-N7 -- nextItem --> N8
-N4["Module 2: Basics of Genome Sequence Analysis"]
-N7["(2.3) An Introduction to Genome Assembly"]
-N4 -- itemListElement --> N7
-N4["Module 2: Basics of Genome Sequence Analysis"]
-N8["(2.4) Chloroplast genome assembly"]
-N4 -- itemListElement --> N8
-N4["Module 2: Basics of Genome Sequence Analysis"]
-N6["(2.2) Mapping"]
-N4 -- itemListElement --> N6
-N6["(2.2) Mapping"]
-N7["(2.3) An Introduction to Genome Assembly"]
-N6 -- nextItem --> N7
-N5["(2.1) Quality Control"]
-N6["(2.2) Mapping"]
-N5 -- nextItem --> N6
-N4["Module 2: Basics of Genome Sequence Analysis"]
-N5["(2.1) Quality Control"]
-N4 -- itemListElement --> N5
 N1["Module 1: Introduction to Galaxy"]
 N3["(1.2) Galaxy Basics for genomics"]
 N1 -- itemListElement --> N3
 N1["Module 1: Introduction to Galaxy"]
 N2["(1.1) A short introduction to Galaxy"]
 N1 -- itemListElement --> N2
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N8["(2.4) Chloroplast genome assembly"]
+N4 -- itemListElement --> N8
+N2["(1.1) A short introduction to Galaxy"]
 N3["(1.2) Galaxy Basics for genomics"]
-N5["(2.1) Quality Control"]
-N3 -- nextItem --> N5
+N2 -- nextItem --> N3
 N1["Module 1: Introduction to Galaxy"]
 N4["Module 2: Basics of Genome Sequence Analysis"]
 N1 -- nextItem --> N4
+N7["(2.3) An Introduction to Genome Assembly"]
+N8["(2.4) Chloroplast genome assembly"]
+N7 -- nextItem --> N8
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N5["(2.1) Quality Control"]
+N4 -- itemListElement --> N5
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N6["(2.2) Mapping"]
+N4 -- itemListElement --> N6
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N7["(2.3) An Introduction to Genome Assembly"]
+N4 -- itemListElement --> N7
+N6["(2.2) Mapping"]
+N7["(2.3) An Introduction to Genome Assembly"]
+N6 -- nextItem --> N7
+N3["(1.2) Galaxy Basics for genomics"]
+N5["(2.1) Quality Control"]
+N3 -- nextItem --> N5
+N5["(2.1) Quality Control"]
+N6["(2.2) Mapping"]
+N5 -- nextItem --> N6
 ```
 
 ## Schema structure
