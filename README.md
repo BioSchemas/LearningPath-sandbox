@@ -144,7 +144,6 @@ direction TB
     class bio_TrainingMaterial {
     }
     Course <|-- new_LearningPath
-    Course <|-- new_LearningPathModule
     Syllabus <|-- new_LearningPathModule
     ListItem <|-- new_LearningPathModule
     LearningResource <|-- Course
