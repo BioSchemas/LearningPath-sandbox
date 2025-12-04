@@ -1,0 +1,140 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix hz: <http://helmholtz-hida.de/> .
+@prefix schema: <https://schema.org/> .
+
+hz:HZ_learning_path a schema:Course ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:courseCode "data-science-course-portfolio" ;
+    schema:description "The platforms of the Information & Data Science Framework have developed a coordinated course offer that covers a wide array of topics." ;
+    schema:name "Helmholtz Data Science Course Portfolio" ;
+    schema:provider hz:Helmholtz ;
+    schema:syllabusSections hz:Module_1 .
+
+hz:Module_1 a schema:Course,
+        schema:ItemList,
+        schema:ListItem,
+        schema:Syllabus ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
+    schema:description "Unlock the potential of open science through courses on collaborative research practices and project management, open-source tools and software, and publishing ethically sound, reproducible, and transparent results." ;
+    schema:itemListElement hz:TM1,
+        hz:TM2,
+        hz:TM3,
+        hz:TM4,
+        hz:TM5,
+        hz:TM6,
+        hz:TM7 ;
+    schema:name "Open Research" ;
+    schema:teaches "Learn how to support open science" .
+
+hz:TM1 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Boost your research efficiency with this workshop on Bash scripting and Git version control. Learn to automate tasks with custom scripts and track your work with Git" ;
+    schema:hasCourseInstance hz:TM1a ;
+    schema:name "(1) Kickstart Shell & Git" ;
+    schema:nextItem hz:TM2 ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/kickstart-shell-git/" .
+
+hz:TM1a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-09-23T17:00:00" ;
+    schema:startDate "2025-09-22T09:00:00" .
+
+hz:TM2a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-09-16T17:00:00" ;
+    schema:startDate "2025-09-15T09:00:00" .
+
+hz:TM2b a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-11-25T17:00:00" ;
+    schema:startDate "2025-11-24T09:00:00" .
+
+hz:TM3a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-11-07T17:00:00" ;
+    schema:startDate "2025-11-06T09:00:00" .
+
+hz:TM4a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-10-29T17:00:00" ;
+    schema:startDate "2025-10-28T09:00:00" .
+
+hz:TM4b a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-12-17T17:00:00" ;
+    schema:startDate "2025-12-16T09:00:00" .
+
+hz:TM6a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-11-19T17:00:00" ;
+    schema:startDate "2025-11-19T09:00:00" .
+
+hz:TM7a a schema:CourseInstance ;
+    dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
+    schema:courseMode "online" ;
+    schema:endDate "2025-10-17T17:00:00" ;
+    schema:startDate "2025-10-17T09:00:00" .
+
+hz:TM2 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Get hands-on with version control in this practical workshop. Learn to use Git alongside GitLab through live coding sessions, applying each step directly to your projects" ;
+    schema:hasCourseInstance hz:TM2a,
+        hz:TM2b ;
+    schema:name "(2) Introduction to Git & GitLab" ;
+    schema:nextItem hz:TM3 ;
+    schema:teaches "Apply a basic GitLab contribution workflow using issues and merge requests" ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/introduction-to-git-and-gitlab/" .
+
+hz:TM3 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Learn best practices for preparing research software for publication in this workshop. Gain actionable insights and apply them to a data analysis script for practical understanding" ;
+    schema:hasCourseInstance hz:TM3a ;
+    schema:name "(3) Foundations of Research Software Publication" ;
+    schema:nextItem hz:TM4 ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/foundations-of-research-software-publication/" .
+
+hz:TM4 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Continuous integration (CI) helps automate testing and standardization to ensure code quality in collaborative projects. Using tools like GitLab CI, teams can save time by automating tasks such as testing new features, enforcing code style, and adding license information" ;
+    schema:hasCourseInstance hz:TM4a,
+        hz:TM4b ;
+    schema:name "(4) Continuous Integration" ;
+    schema:nextItem hz:TM5 ;
+    schema:teaches "Apply advanced optimization techniques for your GitLab CI pipeline" ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/continuous-integration-ci/" .
+
+hz:TM5 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:name "(5) Fundamentals of Software Testing" ;
+    schema:nextItem hz:TM6 ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/fundamentals-of-software-testing/" .
+
+hz:TM6 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "The participants will be introduced to principles of open research and state-of-the-art techniques of how to enhance the reproducibility of their research" ;
+    schema:hasCourseInstance hz:TM6a ;
+    schema:name "(6) Reproducible and Open Research" ;
+    schema:nextItem hz:TM7 ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/reproducible-and-open-research/" .
+
+hz:TM7 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Explore the basics of AI ethics in this course. Gain practical insights into model cards, their importance, and how to create them effectively" ;
+    schema:hasCourseInstance hz:TM7a ;
+    schema:name "(7) AI Ethics: Model Cards for Model Reporting" ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/ai-ethics-model-cards-for-model-reporting/" .
+

@@ -1,0 +1,558 @@
+[
+  {
+    "@id": "http://helmholtz-hida.de/TM3",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Learn best practices for preparing research software for publication in this workshop. Gain actionable insights and apply them to a data analysis script for practical understanding"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM3a"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(3) Foundations of Research Software Publication"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM4"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/foundations-of-research-software-publication/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM5",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(5) Fundamentals of Software Testing"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM6"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/fundamentals-of-software-testing/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM4b",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-12-17T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-12-16T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM4",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Continuous integration (CI) helps automate testing and standardization to ensure code quality in collaborative projects. Using tools like GitLab CI, teams can save time by automating tasks such as testing new features, enforcing code style, and adding license information"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM4a"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM4b"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(4) Continuous Integration"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM5"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Apply advanced optimization techniques for your GitLab CI pipeline"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/continuous-integration-ci/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM1a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-09-23T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-09-22T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM6a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-11-19T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-11-19T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM3a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-11-07T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-11-06T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/Module_1",
+    "@type": [
+      "https://schema.org/Syllabus",
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Unlock the potential of open science through courses on collaborative research practices and project management, open-source tools and software, and publishing ethically sound, reproducible, and transparent results."
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://helmholtz-hida.de/TM1"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM2"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM3"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM4"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM5"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM6"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM7"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Open Research"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Learn how to support open science"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM6",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "The participants will be introduced to principles of open research and state-of-the-art techniques of how to enhance the reproducibility of their research"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM6a"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(6) Reproducible and Open Research"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM7"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/reproducible-and-open-research/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/HZ_learning_path",
+    "@type": [
+      "https://schema.org/Course"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPath"
+      }
+    ],
+    "https://schema.org/courseCode": [
+      {
+        "@value": "data-science-course-portfolio"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "The platforms of the Information & Data Science Framework have developed a coordinated course offer that covers a wide array of topics."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Helmholtz Data Science Course Portfolio"
+      }
+    ],
+    "https://schema.org/provider": [
+      {
+        "@id": "http://helmholtz-hida.de/Helmholtz"
+      }
+    ],
+    "https://schema.org/syllabusSections": [
+      {
+        "@id": "http://helmholtz-hida.de/Module_1"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM2",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Get hands-on with version control in this practical workshop. Learn to use Git alongside GitLab through live coding sessions, applying each step directly to your projects"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM2a"
+      },
+      {
+        "@id": "http://helmholtz-hida.de/TM2b"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(2) Introduction to Git & GitLab"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM3"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Apply a basic GitLab contribution workflow using issues and merge requests"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/introduction-to-git-and-gitlab/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM7",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Explore the basics of AI ethics in this course. Gain practical insights into model cards, their importance, and how to create them effectively"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM7a"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(7) AI Ethics: Model Cards for Model Reporting"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/ai-ethics-model-cards-for-model-reporting/"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM7a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-10-17T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-10-17T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM2a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-09-16T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-09-15T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM4a",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-10-29T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-10-28T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM2b",
+    "@type": [
+      "https://schema.org/CourseInstance"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/CourseInstance"
+      }
+    ],
+    "https://schema.org/courseMode": [
+      {
+        "@value": "online"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@value": "2025-11-25T17:00:00"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@value": "2025-11-24T09:00:00"
+      }
+    ]
+  },
+  {
+    "@id": "http://helmholtz-hida.de/TM1",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/Course"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Boost your research efficiency with this workshop on Bash scripting and Git version control. Learn to automate tasks with custom scripts and track your work with Git"
+      }
+    ],
+    "https://schema.org/hasCourseInstance": [
+      {
+        "@id": "http://helmholtz-hida.de/TM1a"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(1) Kickstart Shell & Git"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://helmholtz-hida.de/TM2"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/kickstart-shell-git/"
+      }
+    ]
+  }
+]
