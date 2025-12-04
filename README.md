@@ -310,8 +310,8 @@ direction TB
     class bio_TrainingMaterial {
     }
     Course <|-- bio_Course
-    bio_Course <|-- new_LearningPath
-    bio_Course <|-- new_LearningPathModule
+    Course <|-- new_LearningPath
+    Course <|-- new_LearningPathModule
     Syllabus <|-- new_LearningPathModule
     ListItem <|-- new_LearningPathModule
     CreativeWork <|-- LearningResource
