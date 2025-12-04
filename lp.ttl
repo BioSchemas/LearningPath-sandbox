@@ -16,8 +16,7 @@ ex:Module_1 a schema:ItemList,
         schema:Syllabus ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
     schema:itemListElement ex:TM11,
-        ex:TM12,
-        ex:TM3 ;
+        ex:TM12 ;
     schema:name "Module 1: Introduction to Galaxy" ;
     schema:nextItem ex:Module_2 ;
     schema:teaches "Learn how to create a workflow" .
@@ -37,8 +36,7 @@ ex:Module_2 a schema:ItemList,
     schema:itemListElement ex:TM21,
         ex:TM22,
         ex:TM23,
-        ex:TM24,
-        ex:TM3 ;
+        ex:TM24 ;
     schema:name "Module 2: Basics of Genome Sequence Analysis" ;
     schema:teaches "Use genome browser to understand your data" .
 
@@ -47,8 +45,7 @@ ex:TM12 a schema:LearningResource,
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "The basic details for Galaxy genomics" ;
     schema:name "(1.2) Galaxy Basics for genomics" ;
-    schema:nextItem ex:TM21,
-        ex:TM3 .
+    schema:nextItem ex:TM21 .
 
 ex:TM21 a schema:LearningResource,
         schema:ListItem ;
@@ -75,11 +72,5 @@ ex:TM24 a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Description of TrainingMaterial 24" ;
-    schema:name "(2.4) Chloroplast genome assembly" ;
-    schema:nextItem ex:TM3 .
-
-ex:TM3 a schema:LearningResource,
-        schema:ListItem ;
-    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
-    schema:name "(3) TrainingMaterial shared by Module 1 and 2" .
+    schema:name "(2.4) Chloroplast genome assembly" .
 

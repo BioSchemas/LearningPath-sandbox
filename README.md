@@ -27,21 +27,22 @@ https://tess.elixir-europe.org/learning_paths/introduction-to-galaxy-and-sequenc
 LP structure: 
 
 **Introduction to Galaxy and Sequence analysis** [syllabusSections=M1,M2]
-- **Module 1: Introduction to Galaxy** [itemListElement=11,12,3] [nextItem=M2]
+- **Module 1: Introduction to Galaxy** [itemListElement=11,12] [nextItem=M2]
   - (1.1) A short introduction to Galaxy [nextItem=12]
-  - (1.2) Galaxy Basics for genomics [nextItem=21,3]
-  - _(3) Review - TrainingMaterial shared by Module 1 and 2_
-- **Module 2: Basics of Genome Sequence Analysis** [itemListElement=11,12,3]
+  - (1.2) Galaxy Basics for genomics [nextItem=21]
+- **Module 2: Basics of Genome Sequence Analysis** [itemListElement=21,22,23,24]
   - (2.1) Quality Control [nextItem=22]
   - (2.2) Mapping [nextItem=23]
   - (2.3) An Introduction to Genome Assembly [nextItem=24]
-  - (2.4) Chloroplast genome assembly [nextItem=3]
-  - (3) Review - TrainingMaterial shared by Module 1 and 2
-
-We have taken a real learning path from GTN and added a fictional material to the end of each module, to ensure that everything still works if a training material appears in more than one module (such as introduction or review). This fictional material is defined once in the RDF but will be rendered twice in the HTML.
+  - (2.4) Chloroplast genome assembly 
 
 ```turtle
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix schema: <https://schema.org/> .
+
 ex:GA_learning_path a schema:Course ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
     schema:courseCode "GSA101" ;
     schema:description "This learning path aims to teach you the basics of Galaxy and analysis of sequencing data. " ;
     schema:name "Introduction to Galaxy and Sequence analysis" ;
@@ -49,86 +50,64 @@ ex:GA_learning_path a schema:Course ;
     schema:syllabusSections ex:Module_1,
         ex:Module_2 .
 
-ex:Module_1 a schema:Course,
-        schema:ItemList,
+ex:Module_1 a schema:ItemList,
         schema:ListItem,
         schema:Syllabus ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
     schema:itemListElement ex:TM11,
-        ex:TM12,
-        ex:TM3 ;
+        ex:TM12 ;
     schema:name "Module 1: Introduction to Galaxy" ;
     schema:nextItem ex:Module_2 ;
     schema:teaches "Learn how to create a workflow" .
 
 ex:TM11 a schema:LearningResource,
         schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "What is Galaxy" ;
     schema:name "(1.1) A short introduction to Galaxy" ;
     schema:nextItem ex:TM12 ;
     schema:url "https://tess.elixir-europe.org/materials/hands-on-for-a-short-introduction-to-galaxy-tutorial?lp=1%3A1" .
-
-ex:TM12 a schema:LearningResource,
-        schema:ListItem ;
-    schema:description "The basic details for Galaxy genomics" ;
-    schema:name "(1.2) Galaxy Basics for genomics" ;
-    schema:nextItem ex:TM21,
-        ex:TM3 .
 ```
 
 And the complete diagram: 
 ```mermaid
 graph TD
-N2["Module 2: Basics of Genome Sequence Analysis"]
+N2["(1.1) A short introduction to Galaxy"]
+N3["(1.2) Galaxy Basics for genomics"]
+N2 -- nextItem --> N3
+N7["(2.3) An Introduction to Genome Assembly"]
+N8["(2.4) Chloroplast genome assembly"]
+N7 -- nextItem --> N8
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N7["(2.3) An Introduction to Genome Assembly"]
+N4 -- itemListElement --> N7
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N8["(2.4) Chloroplast genome assembly"]
+N4 -- itemListElement --> N8
+N4["Module 2: Basics of Genome Sequence Analysis"]
 N6["(2.2) Mapping"]
-N2 -- itemListElement --> N6
+N4 -- itemListElement --> N6
 N6["(2.2) Mapping"]
 N7["(2.3) An Introduction to Genome Assembly"]
 N6 -- nextItem --> N7
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N5["(2.1) Quality Control"]
-N2 -- itemListElement --> N5
-N8["(2.4) TrainingMaterial 24"]
-N9["(3) TrainingMaterial shared by Module 1 and 2"]
-N8 -- nextItem --> N9
-N1["Module 1: Introduction to Galaxy"]
-N9["(3) TrainingMaterial shared by Module 1 and 2"]
-N1 -- itemListElement --> N9
-N4["(1.2) Galaxy Basics for genomics"]
-N9["(3) TrainingMaterial shared by Module 1 and 2"]
-N4 -- nextItem --> N9
-N1["Module 1: Introduction to Galaxy"]
-N4["(1.2) Galaxy Basics for genomics"]
-N1 -- itemListElement --> N4
-N4["(1.2) Galaxy Basics for genomics"]
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N4 -- nextItem --> N2
-N4["(1.2) Galaxy Basics for genomics"]
-N5["(2.1) Quality Control"]
-N4 -- nextItem --> N5
-N1["Module 1: Introduction to Galaxy"]
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N1 -- nextItem --> N2
-N3["(1.1) A short introduction to Galaxy"]
-N4["(1.2) Galaxy Basics for genomics"]
-N3 -- nextItem --> N4
-N7["(2.3) An Introduction to Genome Assembly"]
-N8["(2.4) TrainingMaterial 24"]
-N7 -- nextItem --> N8
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N7["(2.3) An Introduction to Genome Assembly"]
-N2 -- itemListElement --> N7
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N9["(3) TrainingMaterial shared by Module 1 and 2"]
-N2 -- itemListElement --> N9
-N2["Module 2: Basics of Genome Sequence Analysis"]
-N8["(2.4) TrainingMaterial 24"]
-N2 -- itemListElement --> N8
 N5["(2.1) Quality Control"]
 N6["(2.2) Mapping"]
 N5 -- nextItem --> N6
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N5["(2.1) Quality Control"]
+N4 -- itemListElement --> N5
 N1["Module 1: Introduction to Galaxy"]
-N3["(1.1) A short introduction to Galaxy"]
+N3["(1.2) Galaxy Basics for genomics"]
 N1 -- itemListElement --> N3
+N1["Module 1: Introduction to Galaxy"]
+N2["(1.1) A short introduction to Galaxy"]
+N1 -- itemListElement --> N2
+N3["(1.2) Galaxy Basics for genomics"]
+N5["(2.1) Quality Control"]
+N3 -- nextItem --> N5
+N1["Module 1: Introduction to Galaxy"]
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N1 -- nextItem --> N4
 ```
 
 ## Schema structure
