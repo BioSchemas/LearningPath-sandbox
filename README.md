@@ -241,32 +241,32 @@ We propose two new Bioschemas profiles and a small change to [one Bioschemas pro
 
 A `LearningPath` has zero or more `LearningPathModule`. A `LearningPathModule` has zero or more `LearningResource`. These relationships are (ordered) lists or steps, using the `ItemList` and `Syllabus` Schema.org types.
 
-Class diagram:
+Class diagram, where 🔺 is Schema.org type, 🟩 is Bioschemas profile, 🔵 is new profile:
 ```mermaid
 classDiagram
 direction TB
-    class Event {
+    class Event["Event🔺"] {
     }
-    class CourseInstance {
+    class CourseInstance["CourseInstance🔺🟩"]  {
     }
-    class Course {
+    class Course["Course🔺🟩"] {
         syllabusSections
     }
-    class new_LearningPath {
+    class new_LearningPath["new:LearningPath🔵"] {
         Syllabus[] syllabusSections
     }
-    class ListItem {
+    class ListItem["ListItem🔺"] {
 	    nextItem
     }
-    class Syllabus {   
+    class Syllabus["Syllabus🔺"] {   
     }
-    class new_LearningPathModule {
+    class new_LearningPathModule["new:LearningPathModule🔵"] {
         ListItem[] itemListElement
         LearningPathTopic nextItem
     }
-    class LearningResource {
+    class LearningResource["LearningResource🔺"] {
     }
-    class bio_TrainingMaterial {
+    class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
     Course <|-- new_LearningPath
     Course <|-- new_LearningPathModule
@@ -282,32 +282,34 @@ More detailed class diagram, including the distinction where there is a Schema.o
 ```mermaid
 classDiagram
 direction TB
-    class Event {
+    class CourseInstance["CourseInstance🔺"] {
     }
-    class CourseInstance {
+    class bio_CourseInstance["bio:CourseInstance🟩"] {
     }
-    class bio_CourseInstance {
+    class bio_Course["bio:Course🟩"] {
     }
-    class bio_Course {
+    class Course["Course🔺"] {
+	    syllabusSections
     }
-    class Course {
-        syllabusSections
+    class new_LearningPath["new:LearningPath🔵"] {
+	    Syllabus[] syllabusSections
     }
-    class new_LearningPath {
-        Syllabus[] syllabusSections
-    }
-    class ListItem {
+    class ListItem["ListItem🔺"] {
 	    nextItem
     }
-    class Syllabus {  
+    class Syllabus["Syllabus🔺"] {
     }
-    class new_LearningPathModule {
-        ListItem[] itemListElement
-        LearningPathTopic nextItem
+    class new_LearningPathModule["new:LearningPathModule🔵"] {
+	    ListItem[] itemListElement
+	    LearningPathTopic nextItem
     }
-    class LearningResource {
+    class LearningResource["LearningResource🔺"] {
     }
-    class bio_TrainingMaterial {
+    class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
+    }
+    class CreativeWork["CreativeWork🔺"] {
+    }
+    class Event["Event🔺"] {
     }
     Course <|-- bio_Course
     Course <|-- new_LearningPath
