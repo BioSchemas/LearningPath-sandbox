@@ -5,7 +5,7 @@ authors: Phil Reed, Alban Gaignard, Leyla Jael Castro
 contributors: Nick Juty, Roman Baum
 
 - Initially drafted the 20th of November 2025, as part of Bioschemas activities and ELIXIR BioHackathon Europe 2025.
-- Refined at de.NBI BioHackathon Germany 2025.
+- Refined at de.NBI BioHackathon Germany 2025. [Report on BioHackrXiv](https://doi.org/10.37044/osf.io/un6cd_v1)
 - To be revised by the community.
 
 
