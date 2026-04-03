@@ -1,82 +1,96 @@
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ex: <http://example.org/> .
 @prefix schema: <https://schema.org/> .
+@prefix sib: <http://sib.swiss/> .
 
-ex:GA_learning_path a schema:Course ;
+sib:GA_learning_path a schema:Course ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
     schema:courseCode "DSwP" ;
     schema:description "Our learning paths show the sequence of selected courses." ;
     schema:name "SIB: Data Science with Python" ;
-    schema:provider ex:SIB ;
-    schema:syllabusSections ex:Module_Green,
-        ex:Module_Red ;
+    schema:provider sib:SIB ;
+    schema:syllabusSections sib:Module_Green,
+        sib:Module_Red ;
     schema:url "https://www.sib.swiss/training/learning-paths?path=data-science-with-python" .
 
-ex:Module_Green a schema:Course,
+sib:Module_Green a schema:Course,
         schema:ItemList,
         schema:ListItem,
         schema:Syllabus ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
-    schema:itemListElement ex:TM_G1,
-        ex:TM_G2a,
-        ex:TM_G2b,
-        ex:TM_G2c,
-        ex:TM_GRa,
-        ex:TM_GRb ;
+    schema:itemListElement sib:TM_G1,
+        sib:TM_G2a,
+        sib:TM_G2b,
+        sib:TM_G2c,
+        sib:TM_GRa,
+        sib:TM_GRb ;
     schema:name "Module: Python [Green]" ;
-    schema:nextItem ex:Module_Red ;
+    schema:nextItem sib:Module_Red ;
     schema:teaches "Learn how to use Python for data science" .
 
-ex:TM_G1 a schema:LearningResource,
+sib:TM_G1 a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Python is an open-source and general-purpose scripting language..." ;
     schema:name "(G1) First Steps with Python in Life Sciences" ;
-    schema:nextItem ex:TM_G2a,
-        ex:TM_G2b,
-        ex:TM_G2c,
-        ex:TM_GRa,
-        ex:TM_GRb ;
+    schema:nextItem sib:TM_G2a,
+        sib:TM_G2b,
+        sib:TM_G2c,
+        sib:TM_GRa,
+        sib:TM_GRb ;
     schema:url "https://www.sib.swiss/training/course/20260928_FSWPY" .
 
-ex:TM_R1 a schema:LearningResource,
+sib:TM_R1 a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Application of basic statistical analysis techniques..." ;
     schema:name "(R1) Introduction to Statistics and Data Visualisation with R" ;
-    schema:nextItem ex:TM_GRa,
-        ex:TM_GRb ;
+    schema:nextItem sib:TM_GRa,
+        sib:TM_GRb ;
     schema:url "https://www.sib.swiss/training/course/20260126_STATR" .
 
-ex:Module_Red a schema:Course,
+sib:Module_Red a schema:Course,
         schema:ItemList,
         schema:ListItem,
         schema:Syllabus ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
-    schema:itemListElement ex:TM_GRa,
-        ex:TM_GRb,
-        ex:TM_R1 ;
+    schema:itemListElement sib:TM_GRa,
+        sib:TM_GRb,
+        sib:TM_R1 ;
     schema:name "Module: Machine Learning [Red]" ;
     schema:teaches "Learn to use machine learning in life sciences" .
 
-ex:TM_G2a a schema:LearningResource,
+sib:TM_G2a a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Focus on the good practices to use Python libraries..." ;
     schema:name "(G2a) Explore and Visualise Your Data with Python" ;
     schema:url "https://www.sib.swiss/training/course/2021_EVDP" .
 
-ex:TM_G2b a schema:LearningResource,
+sib:TM_G2b a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Monitor Python code, detect computational bottlenecks..." ;
     schema:name "(G2b) Optimising Python Code for Better Performance" ;
     schema:url "https://www.sib.swiss/training/course/20251111_OPTPY" .
 
-ex:TM_G2c a schema:LearningResource,
+sib:TM_G2c a schema:LearningResource,
         schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
     schema:description "Select the right visualization tools for your needs..." ;
     schema:name "(G2c) Interactive Visualisation with Python" ;
     schema:url "https://www.sib.swiss/training/course/20260407_IVIPY" .
+
+sib:TM_GRa a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "Modules (mainly pandas and seaborn) and recipes..." ;
+    schema:name "(GRa) Data Analysis and Representation in Python" ;
+    schema:url "https://www.sib.swiss/training/course/20260414_DARPY" .
+
+sib:TM_GRb a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "Common ML algorithms and how to apply them..." ;
+    schema:name "(GRb) Introduction to Machine Learning with Python" ;
+    schema:url "https://www.sib.swiss/training/course/20260601_INMLP" .
 
