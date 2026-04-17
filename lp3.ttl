@@ -24,8 +24,20 @@ sib:Module_Green a schema:Course,
         sib:TM_GRa,
         sib:TM_GRb ;
     schema:name "Module: Python [Green]" ;
-    schema:nextItem sib:Module_Red ;
+    schema:nextItem sib:TM_G1 ;
     schema:teaches "Learn how to use Python for data science" .
+
+sib:Module_Red a schema:Course,
+        schema:ItemList,
+        schema:ListItem,
+        schema:Syllabus ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
+    schema:itemListElement sib:TM_GRa,
+        sib:TM_GRb,
+        sib:TM_R1 ;
+    schema:name "Module: Machine Learning [Red]" ;
+    schema:nextItem sib:TM_R1 ;
+    schema:teaches "Learn to use machine learning in life sciences" .
 
 sib:TM_G1 a schema:LearningResource,
         schema:ListItem ;
@@ -38,26 +50,6 @@ sib:TM_G1 a schema:LearningResource,
         sib:TM_GRa,
         sib:TM_GRb ;
     schema:url "https://www.sib.swiss/training/course/20260928_FSWPY" .
-
-sib:TM_R1 a schema:LearningResource,
-        schema:ListItem ;
-    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
-    schema:description "Application of basic statistical analysis techniques..." ;
-    schema:name "(R1) Introduction to Statistics and Data Visualisation with R" ;
-    schema:nextItem sib:TM_GRa,
-        sib:TM_GRb ;
-    schema:url "https://www.sib.swiss/training/course/20260126_STATR" .
-
-sib:Module_Red a schema:Course,
-        schema:ItemList,
-        schema:ListItem,
-        schema:Syllabus ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
-    schema:itemListElement sib:TM_GRa,
-        sib:TM_GRb,
-        sib:TM_R1 ;
-    schema:name "Module: Machine Learning [Red]" ;
-    schema:teaches "Learn to use machine learning in life sciences" .
 
 sib:TM_G2a a schema:LearningResource,
         schema:ListItem ;
@@ -79,6 +71,15 @@ sib:TM_G2c a schema:LearningResource,
     schema:description "Select the right visualization tools for your needs..." ;
     schema:name "(G2c) Interactive Visualisation with Python" ;
     schema:url "https://www.sib.swiss/training/course/20260407_IVIPY" .
+
+sib:TM_R1 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "Application of basic statistical analysis techniques..." ;
+    schema:name "(R1) Introduction to Statistics and Data Visualisation with R" ;
+    schema:nextItem sib:TM_GRa,
+        sib:TM_GRb ;
+    schema:url "https://www.sib.swiss/training/course/20260126_STATR" .
 
 sib:TM_GRa a schema:LearningResource,
         schema:ListItem ;

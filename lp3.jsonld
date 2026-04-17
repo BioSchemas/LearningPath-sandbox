@@ -1,5 +1,121 @@
 [
   {
+    "@id": "http://sib.swiss/TM_GRb",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Common ML algorithms and how to apply them..."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(GRb) Introduction to Machine Learning with Python"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.sib.swiss/training/course/20260601_INMLP"
+      }
+    ]
+  },
+  {
+    "@id": "http://sib.swiss/Module_Red",
+    "@type": [
+      "https://schema.org/Syllabus",
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://sib.swiss/TM_R1"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRa"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRb"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Module: Machine Learning [Red]"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://sib.swiss/TM_R1"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Learn to use machine learning in life sciences"
+      }
+    ]
+  },
+  {
+    "@id": "http://sib.swiss/Module_Green",
+    "@type": [
+      "https://schema.org/Syllabus",
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://sib.swiss/TM_G1"
+      },
+      {
+        "@id": "http://sib.swiss/TM_G2a"
+      },
+      {
+        "@id": "http://sib.swiss/TM_G2b"
+      },
+      {
+        "@id": "http://sib.swiss/TM_G2c"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRa"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRb"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Module: Python [Green]"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://sib.swiss/TM_G1"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Learn how to use Python for data science"
+      }
+    ]
+  },
+  {
     "@id": "http://sib.swiss/TM_G2c",
     "@type": [
       "https://schema.org/LearningResource",
@@ -54,7 +170,7 @@
     ]
   },
   {
-    "@id": "http://sib.swiss/TM_GRb",
+    "@id": "http://sib.swiss/TM_GRa",
     "@type": [
       "https://schema.org/LearningResource",
       "https://schema.org/ListItem"
@@ -66,110 +182,17 @@
     ],
     "https://schema.org/description": [
       {
-        "@value": "Common ML algorithms and how to apply them..."
+        "@value": "Modules (mainly pandas and seaborn) and recipes..."
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "(GRb) Introduction to Machine Learning with Python"
+        "@value": "(GRa) Data Analysis and Representation in Python"
       }
     ],
     "https://schema.org/url": [
       {
-        "@value": "https://www.sib.swiss/training/course/20260601_INMLP"
-      }
-    ]
-  },
-  {
-    "@id": "http://sib.swiss/TM_G1",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/ListItem"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Python is an open-source and general-purpose scripting language..."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "(G1) First Steps with Python in Life Sciences"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://sib.swiss/TM_G2a"
-      },
-      {
-        "@id": "http://sib.swiss/TM_G2b"
-      },
-      {
-        "@id": "http://sib.swiss/TM_G2c"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRa"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRb"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@value": "https://www.sib.swiss/training/course/20260928_FSWPY"
-      }
-    ]
-  },
-  {
-    "@id": "http://sib.swiss/Module_Green",
-    "@type": [
-      "https://schema.org/Syllabus",
-      "https://schema.org/Course",
-      "https://schema.org/ListItem",
-      "https://schema.org/ItemList"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/LearningPathModule"
-      }
-    ],
-    "https://schema.org/itemListElement": [
-      {
-        "@id": "http://sib.swiss/TM_G1"
-      },
-      {
-        "@id": "http://sib.swiss/TM_G2a"
-      },
-      {
-        "@id": "http://sib.swiss/TM_G2b"
-      },
-      {
-        "@id": "http://sib.swiss/TM_G2c"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRa"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRb"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Module: Python [Green]"
-      }
-    ],
-    "https://schema.org/nextItem": [
-      {
-        "@id": "http://sib.swiss/Module_Red"
-      }
-    ],
-    "https://schema.org/teaches": [
-      {
-        "@value": "Learn how to use Python for data science"
+        "@value": "https://www.sib.swiss/training/course/20260414_DARPY"
       }
     ]
   },
@@ -218,95 +241,6 @@
     ]
   },
   {
-    "@id": "http://sib.swiss/TM_GRa",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/ListItem"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Modules (mainly pandas and seaborn) and recipes..."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "(GRa) Data Analysis and Representation in Python"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@value": "https://www.sib.swiss/training/course/20260414_DARPY"
-      }
-    ]
-  },
-  {
-    "@id": "http://sib.swiss/Module_Red",
-    "@type": [
-      "https://schema.org/Syllabus",
-      "https://schema.org/Course",
-      "https://schema.org/ListItem",
-      "https://schema.org/ItemList"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/LearningPathModule"
-      }
-    ],
-    "https://schema.org/itemListElement": [
-      {
-        "@id": "http://sib.swiss/TM_R1"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRa"
-      },
-      {
-        "@id": "http://sib.swiss/TM_GRb"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Module: Machine Learning [Red]"
-      }
-    ],
-    "https://schema.org/teaches": [
-      {
-        "@value": "Learn to use machine learning in life sciences"
-      }
-    ]
-  },
-  {
-    "@id": "http://sib.swiss/TM_G2a",
-    "@type": [
-      "https://schema.org/LearningResource",
-      "https://schema.org/ListItem"
-    ],
-    "http://purl.org/dc/terms/conformsTo": [
-      {
-        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "Focus on the good practices to use Python libraries..."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "(G2a) Explore and Visualise Your Data with Python"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@value": "https://www.sib.swiss/training/course/2021_EVDP"
-      }
-    ]
-  },
-  {
     "@id": "http://sib.swiss/TM_R1",
     "@type": [
       "https://schema.org/LearningResource",
@@ -338,6 +272,77 @@
     "https://schema.org/url": [
       {
         "@value": "https://www.sib.swiss/training/course/20260126_STATR"
+      }
+    ]
+  },
+  {
+    "@id": "http://sib.swiss/TM_G1",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Python is an open-source and general-purpose scripting language..."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(G1) First Steps with Python in Life Sciences"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://sib.swiss/TM_G2a"
+      },
+      {
+        "@id": "http://sib.swiss/TM_G2b"
+      },
+      {
+        "@id": "http://sib.swiss/TM_G2c"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRa"
+      },
+      {
+        "@id": "http://sib.swiss/TM_GRb"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.sib.swiss/training/course/20260928_FSWPY"
+      }
+    ]
+  },
+  {
+    "@id": "http://sib.swiss/TM_G2a",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Focus on the good practices to use Python libraries..."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(G2a) Explore and Visualise Your Data with Python"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "https://www.sib.swiss/training/course/2021_EVDP"
       }
     ]
   }
