@@ -24,17 +24,20 @@ A jupyter notebook showing :
 ## Results 
 
 ### First example
-A sample Learning path: 
+A sample linear learning path from Galaxy Training Network, hosted in TeSS: 
 
 https://tess.elixir-europe.org/learning_paths/introduction-to-galaxy-and-sequence-analysis-6384c0ed-3546-41cf-ac30-bff8680dd96c
 
 LP structure: 
 
-**Introduction to Galaxy and Sequence analysis** [syllabusSections=M1,M2]
-- **Module 1: Introduction to Galaxy** [itemListElement=11,12] [nextItem=M2]
+> [!CAUTION]
+> TODO: update the Module syntax in the below
+ 
+**Introduction to Galaxy and Sequence analysis** [syllabusSections=M1,M2] [nextItem=M1]
+- **Module 1: Introduction to Galaxy** [itemListElement=11,12] [nextItem=11]
   - (1.1) A short introduction to Galaxy [nextItem=12]
-  - (1.2) Galaxy Basics for genomics [nextItem=21]
-- **Module 2: Basics of Genome Sequence Analysis** [itemListElement=21,22,23,24]
+  - (1.2) Galaxy Basics for genomics [nextItem=M2]
+- **Module 2: Basics of Genome Sequence Analysis** [itemListElement=21,22,23,24] [nextItem=21]
   - (2.1) Quality Control [nextItem=22]
   - (2.2) Mapping [nextItem=23]
   - (2.3) An Introduction to Genome Assembly [nextItem=24]
@@ -124,8 +127,7 @@ https://www.helmholtz-hida.de/en/discover-hida/helmholtz-information-data-scienc
 
 LP structure: 
 
-**Helmholtz Data Science Course Portfolio** [syllabusSections=M1]
-- **Module: Open Research** [itemListElement=1,2,3,4,5,6,7]
+**Helmholtz Data Science Course Portfolio: Open Research** [syllabusSections=None] [itemListElement=1,2,3,4,5,6,7] [nextItem=1]
   - (1) Kickstart Shell & Git [nextItem=2]
     - 22-23 September 2025
   - (2) Introduction to Git & GitLab [nextItem=3]
@@ -144,6 +146,9 @@ LP structure:
     - 17 October 2025
 
 Each course may have multiple course instances.
+
+> [!CAUTION]
+> TODO: remove the Module syntax from the below
 
 ```turtle
 hz:HZ_learning_path a schema:Course ;
@@ -230,16 +235,18 @@ N8["(7) AI Ethics: Model Cards for Model Reporting"]
 N7 -- nextItem --> N8
 ```
 
+### Third example
+
+SIB Python course (see Notebook)
 
 ## Schema structure
 
-We propose two new Bioschemas profiles and a small change to [one Bioschemas profile](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE):
+We propose one new Bioschemas profile and possibly a small change to [one Bioschemas profile](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE):
 
-- `LearningPath`: inherits from `Course`
-- `LearningPathModule`: inherits from `Course` and `Syllabus` and `ListItem` and `ItemList`
+- `LearningPath`: inherits from `Course` and `Syllabus` and `ListItem` and `ItemList`
 - `TrainingMaterial`: inherits from `LearningResource` and `ListItem`
 
-A `LearningPath` has zero or more `LearningPathModule`. A `LearningPathModule` has zero or more `LearningResource`. These relationships are (ordered) lists or steps, using the `ItemList` and `Syllabus` Schema.org types.
+A `LearningPath` has zero or more `LearningPath` nested; these can be modules/topics/branches. A `LearningPath` has zero or more `LearningResource`. These relationships can be ordered lists or steps, using the `ItemList` and `Syllabus` Schema.org types.
 
 Class diagram, where 🔺 is Schema.org type, 🟩 is Bioschemas profile, 🔵 is new profile:
 ```mermaid
@@ -254,24 +261,21 @@ direction TB
     }
     class new_LearningPath["new:LearningPath🔵"] {
         Syllabus[] syllabusSections
+        ListItem[] itemListElement
+        LearningPathTopic nextItem
     }
     class ListItem["ListItem🔺"] {
 	    nextItem
     }
     class Syllabus["Syllabus🔺"] {   
     }
-    class new_LearningPathModule["new:LearningPathModule🔵"] {
-        ListItem[] itemListElement
-        LearningPathTopic nextItem
-    }
     class LearningResource["LearningResource🔺"] {
     }
     class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
     Course <|-- new_LearningPath
-    Course <|-- new_LearningPathModule
-    Syllabus <|-- new_LearningPathModule
-    ListItem <|-- new_LearningPathModule
+    Syllabus <|-- new_LearningPath
+    ListItem <|-- new_LearningPath
     LearningResource <|-- Course
     LearningResource <|-- bio_TrainingMaterial
     LearningResource <|-- Syllabus
@@ -293,15 +297,13 @@ direction TB
     }
     class new_LearningPath["new:LearningPath🔵"] {
 	    Syllabus[] syllabusSections
+	    ListItem[] itemListElement
+	    LearningPathTopic nextItem
     }
     class ListItem["ListItem🔺"] {
 	    nextItem
     }
     class Syllabus["Syllabus🔺"] {
-    }
-    class new_LearningPathModule["new:LearningPathModule🔵"] {
-	    ListItem[] itemListElement
-	    LearningPathTopic nextItem
     }
     class LearningResource["LearningResource🔺"] {
     }
@@ -313,9 +315,8 @@ direction TB
     }
     Course <|-- bio_Course
     Course <|-- new_LearningPath
-    Course <|-- new_LearningPathModule
-    Syllabus <|-- new_LearningPathModule
-    ListItem <|-- new_LearningPathModule
+    Syllabus <|-- new_LearningPath
+    ListItem <|-- new_LearningPath
     CreativeWork <|-- LearningResource
     CreativeWork <|-- Course
     LearningResource <|-- Course
