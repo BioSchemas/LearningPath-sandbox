@@ -29,12 +29,9 @@ A sample linear learning path from Galaxy Training Network, hosted in TeSS:
 https://tess.elixir-europe.org/learning_paths/introduction-to-galaxy-and-sequence-analysis-6384c0ed-3546-41cf-ac30-bff8680dd96c
 
 LP structure: 
-
-> [!CAUTION]
-> TODO: update the Module syntax in the below
  
 **Introduction to Galaxy and Sequence analysis** [syllabusSections=M1,M2] [nextItem=M1]
-- **Module 1: Introduction to Galaxy** [itemListElement=11,12] [nextItem=11]
+- **Module 1: Introduction to Galaxy** [itemListElement=11,12] [nextItem=11,M2]
   - (1.1) A short introduction to Galaxy [nextItem=12]
   - (1.2) Galaxy Basics for genomics [nextItem=M2]
 - **Module 2: Basics of Genome Sequence Analysis** [itemListElement=21,22,23,24] [nextItem=21]
@@ -54,17 +51,17 @@ ex:GA_learning_path a schema:Course ;
     schema:description "This learning path aims to teach you the basics of Galaxy and analysis of sequencing data. " ;
     schema:name "Introduction to Galaxy and Sequence analysis" ;
     schema:provider ex:ExampleUniversity ;
-    schema:syllabusSections ex:Module_1,
-        ex:Module_2 .
+    schema:syllabusSections ex:Module_1, ex:Module_2 .
 
-ex:Module_1 a schema:ItemList,
+ex:Module_1 a schema:Course,
+        schema:ItemList,
         schema:ListItem,
         schema:Syllabus ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
     schema:itemListElement ex:TM11,
         ex:TM12 ;
     schema:name "Module 1: Introduction to Galaxy" ;
-    schema:nextItem ex:Module_2 ;
+    schema:nextItem ex:Module_2, ex:TM11 ;
     schema:teaches "Learn how to create a workflow" .
 
 ex:TM11 a schema:LearningResource,
@@ -80,41 +77,47 @@ And the complete diagram:
 ```mermaid
 graph TD
 N1["Module 1: Introduction to Galaxy"]
-N3["(1.2) Galaxy Basics for genomics"]
-N1 -- itemListElement --> N3
-N1["Module 1: Introduction to Galaxy"]
-N2["(1.1) A short introduction to Galaxy"]
-N1 -- itemListElement --> N2
 N4["Module 2: Basics of Genome Sequence Analysis"]
-N8["(2.4) Chloroplast genome assembly"]
-N4 -- itemListElement --> N8
+N1 -- nextItem --> N4
 N2["(1.1) A short introduction to Galaxy"]
 N3["(1.2) Galaxy Basics for genomics"]
 N2 -- nextItem --> N3
-N1["Module 1: Introduction to Galaxy"]
 N4["Module 2: Basics of Genome Sequence Analysis"]
-N1 -- nextItem --> N4
+N5["(2.1) Quality Control"]
+N4 -- nextItem --> N5
+N3["(1.2) Galaxy Basics for genomics"]
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N3 -- nextItem --> N4
 N7["(2.3) An Introduction to Genome Assembly"]
 N8["(2.4) Chloroplast genome assembly"]
 N7 -- nextItem --> N8
 N4["Module 2: Basics of Genome Sequence Analysis"]
-N5["(2.1) Quality Control"]
-N4 -- itemListElement --> N5
-N4["Module 2: Basics of Genome Sequence Analysis"]
 N6["(2.2) Mapping"]
 N4 -- itemListElement --> N6
+N1["Module 1: Introduction to Galaxy"]
+N3["(1.2) Galaxy Basics for genomics"]
+N1 -- itemListElement --> N3
 N4["Module 2: Basics of Genome Sequence Analysis"]
 N7["(2.3) An Introduction to Genome Assembly"]
 N4 -- itemListElement --> N7
-N6["(2.2) Mapping"]
-N7["(2.3) An Introduction to Genome Assembly"]
-N6 -- nextItem --> N7
-N3["(1.2) Galaxy Basics for genomics"]
-N5["(2.1) Quality Control"]
-N3 -- nextItem --> N5
 N5["(2.1) Quality Control"]
 N6["(2.2) Mapping"]
 N5 -- nextItem --> N6
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N8["(2.4) Chloroplast genome assembly"]
+N4 -- itemListElement --> N8
+N4["Module 2: Basics of Genome Sequence Analysis"]
+N5["(2.1) Quality Control"]
+N4 -- itemListElement --> N5
+N6["(2.2) Mapping"]
+N7["(2.3) An Introduction to Genome Assembly"]
+N6 -- nextItem --> N7
+N1["Module 1: Introduction to Galaxy"]
+N2["(1.1) A short introduction to Galaxy"]
+N1 -- itemListElement --> N2
+N1["Module 1: Introduction to Galaxy"]
+N2["(1.1) A short introduction to Galaxy"]
+N1 -- nextItem --> N2
 ```
 
 ### Second example
@@ -194,50 +197,57 @@ hz:TM1a a schema:CourseInstance ;
 And the complete diagram: 
 ```mermaid
 graph TD
-N2["(1) Kickstart Shell & Git"]
-N3["(2) Introduction to Git & GitLab"]
-N2 -- nextItem --> N3
-N1["Open Research"]
-N8["(7) AI Ethics: Model Cards for Model Reporting"]
-N1 -- itemListElement --> N8
-N5["(4) Continuous Integration"]
-N6["(5) Fundamentals of Software Testing"]
-N5 -- nextItem --> N6
-N3["(2) Introduction to Git & GitLab"]
-N4["(3) Foundations of Research Software Publication"]
-N3 -- nextItem --> N4
-N1["Open Research"]
-N5["(4) Continuous Integration"]
-N1 -- itemListElement --> N5
-N1["Open Research"]
-N3["(2) Introduction to Git & GitLab"]
-N1 -- itemListElement --> N3
-N1["Open Research"]
-N7["(6) Reproducible and Open Research"]
-N1 -- itemListElement --> N7
-N4["(3) Foundations of Research Software Publication"]
-N5["(4) Continuous Integration"]
-N4 -- nextItem --> N5
-N1["Open Research"]
-N2["(1) Kickstart Shell & Git"]
-N1 -- itemListElement --> N2
-N6["(5) Fundamentals of Software Testing"]
-N7["(6) Reproducible and Open Research"]
-N6 -- nextItem --> N7
 N1["Open Research"]
 N4["(3) Foundations of Research Software Publication"]
 N1 -- itemListElement --> N4
 N1["Open Research"]
+N2["(1) Kickstart Shell & Git"]
+N1 -- itemListElement --> N2
+N1["Open Research"]
+N5["(4) Continuous Integration"]
+N1 -- itemListElement --> N5
+N4["(3) Foundations of Research Software Publication"]
+N5["(4) Continuous Integration"]
+N4 -- nextItem --> N5
 N6["(5) Fundamentals of Software Testing"]
-N1 -- itemListElement --> N6
+N7["(6) Reproducible and Open Research"]
+N6 -- nextItem --> N7
+N5["(4) Continuous Integration"]
+N6["(5) Fundamentals of Software Testing"]
+N5 -- nextItem --> N6
 N7["(6) Reproducible and Open Research"]
 N8["(7) AI Ethics: Model Cards for Model Reporting"]
 N7 -- nextItem --> N8
+N1["Open Research"]
+N6["(5) Fundamentals of Software Testing"]
+N1 -- itemListElement --> N6
+N1["Open Research"]
+N7["(6) Reproducible and Open Research"]
+N1 -- itemListElement --> N7
+N3["(2) Introduction to Git & GitLab"]
+N4["(3) Foundations of Research Software Publication"]
+N3 -- nextItem --> N4
+N1["Open Research"]
+N2["(1) Kickstart Shell & Git"]
+N1 -- nextItem --> N2
+N1["Open Research"]
+N3["(2) Introduction to Git & GitLab"]
+N1 -- itemListElement --> N3
+N1["Open Research"]
+N8["(7) AI Ethics: Model Cards for Model Reporting"]
+N1 -- itemListElement --> N8
+N2["(1) Kickstart Shell & Git"]
+N3["(2) Introduction to Git & GitLab"]
+N2 -- nextItem --> N3
 ```
 
 ### Third example
 
-SIB Python course (see Notebook)
+This is a learning path graph of elearning materials, where some also have course instances (events). There are some choices for the learner. There is one node which requires prerequisites from an additional learning paths. https://www.sib.swiss/training/learning-paths?path=data-science-with-python
+
+![SIB learning path](lp3-source-image.png)
+
+The code for this example is still in development.
 
 ## Schema structure
 
@@ -262,7 +272,7 @@ direction TB
     class new_LearningPath["new:LearningPath🔵"] {
         Syllabus[] syllabusSections
         ListItem[] itemListElement
-        LearningPathTopic nextItem
+        ListItem nextItem
     }
     class ListItem["ListItem🔺"] {
 	    nextItem
@@ -298,10 +308,7 @@ direction TB
     class new_LearningPath["new:LearningPath🔵"] {
 	    Syllabus[] syllabusSections
 	    ListItem[] itemListElement
-	    LearningPathTopic nextItem
-    }
-    class ListItem["ListItem🔺"] {
-	    nextItem
+	    ListItem nextItem
     }
     class Syllabus["Syllabus🔺"] {
     }
@@ -309,9 +316,17 @@ direction TB
     }
     class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
+    class ListItem["ListItem🔺"] {
+	    nextItem
+    }
     class CreativeWork["CreativeWork🔺"] {
     }
     class Event["Event🔺"] {
+    }
+    class Intangible["Intangible🔺"] {
+    }
+    class Thing["Thing🔺"] {
+	    itemListElement
     }
     Course <|-- bio_Course
     Course <|-- new_LearningPath
@@ -324,4 +339,8 @@ direction TB
     Event <|-- CourseInstance
     CourseInstance <|-- bio_CourseInstance
     LearningResource <|-- bio_TrainingMaterial
+    Thing <|-- Event
+    Thing <|-- CreativeWork
+    Intangible <|-- ListItem
+    Thing <|-- Intangible
 ```
