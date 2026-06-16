@@ -253,10 +253,10 @@ The code for this example is still in development.
 
 We propose one new Bioschemas profile and possibly a small change to [one Bioschemas profile](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE):
 
-- `LearningPath`: inherits from `Course` and `Syllabus` and `ListItem` and `ItemList`
+- `LearningPath`: inherits from `Course` and `ListItem` and `ItemList`
 - `TrainingMaterial`: inherits from `LearningResource` and `ListItem`
 
-A `LearningPath` has zero or more `LearningPath` nested; these can be modules/topics/branches. A `LearningPath` has zero or more `LearningResource`. These relationships can be ordered lists or steps, using the `ItemList` and `Syllabus` Schema.org types.
+A `LearningPath` has zero or more `LearningPath` nested; these can be modules/topics/branches. A `LearningPath` has zero or more `LearningResource`. These relationships can be ordered lists or steps, using the `ItemList` Schema.org types.
 
 Class diagram, where 🔺 is Schema.org type, 🟩 is Bioschemas profile, 🔵 is new profile:
 ```mermaid
@@ -267,28 +267,22 @@ direction TB
     class CourseInstance["CourseInstance🔺🟩"]  {
     }
     class Course["Course🔺🟩"] {
-        syllabusSections
     }
     class new_LearningPath["new:LearningPath🔵"] {
-        Syllabus[] syllabusSections
         ListItem[] itemListElement
         ListItem nextItem
     }
     class ListItem["ListItem🔺"] {
 	    nextItem
     }
-    class Syllabus["Syllabus🔺"] {   
-    }
     class LearningResource["LearningResource🔺"] {
     }
     class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
     Course <|-- new_LearningPath
-    Syllabus <|-- new_LearningPath
     ListItem <|-- new_LearningPath
     LearningResource <|-- Course
     LearningResource <|-- bio_TrainingMaterial
-    LearningResource <|-- Syllabus
     Event <|-- CourseInstance
 ```
 
@@ -303,14 +297,10 @@ direction TB
     class bio_Course["bio:Course🟩"] {
     }
     class Course["Course🔺"] {
-	    syllabusSections
     }
     class new_LearningPath["new:LearningPath🔵"] {
-	    Syllabus[] syllabusSections
 	    ListItem[] itemListElement
 	    ListItem nextItem
-    }
-    class Syllabus["Syllabus🔺"] {
     }
     class LearningResource["LearningResource🔺"] {
     }
@@ -330,12 +320,10 @@ direction TB
     }
     Course <|-- bio_Course
     Course <|-- new_LearningPath
-    Syllabus <|-- new_LearningPath
     ListItem <|-- new_LearningPath
     CreativeWork <|-- LearningResource
     CreativeWork <|-- Course
     LearningResource <|-- Course
-    LearningResource <|-- Syllabus
     Event <|-- CourseInstance
     CourseInstance <|-- bio_CourseInstance
     LearningResource <|-- bio_TrainingMaterial
