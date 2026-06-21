@@ -1,0 +1,75 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix schema: <https://schema.org/> .
+
+ex:BLUE a schema:Course ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:courseCode "LIT123" ;
+    schema:description "This learning path aims to teach you the basics of comparative literature in English, German and across both. " ;
+    schema:itemListElement ex:A,
+        ex:F,
+        ex:GREEN,
+        ex:RED ;
+    schema:name "(BLUE) AND (all of, in order) Comparative lit in English and German" ;
+    schema:provider ex:ExampleUniversity .
+
+ex:A a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "Introduction to Literature" ;
+    schema:name "(A) Intro to Lit" ;
+    schema:nextItem ex:GREEN ;
+    schema:teaches "Learn how to discuss literature" ;
+    schema:url "http://example.org/material/A" .
+
+ex:B a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "English Literature in Canadian English" ;
+    schema:name "(B) English Lit by CA" ;
+    schema:url "http://example.org/material/B" .
+
+ex:C a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "English Literature in British English" ;
+    schema:name "(C) English Lit by GB" ;
+    schema:url "http://example.org/material/C" .
+
+ex:D a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "German Literature" ;
+    schema:name "(D) German Lit" ;
+    schema:url "http://example.org/material/D" .
+
+ex:E a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "Comparative Literature methods" ;
+    schema:name "(E) Comparative Lit" ;
+    schema:url "http://example.org/material/E" .
+
+ex:F a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "How to compare Literature in German and English" ;
+    schema:name "(F) Compare German and English Lit" .
+
+ex:GREEN a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:itemListElement ex:B,
+        ex:C ;
+    schema:name "(GREEN) OR (any of)" ;
+    schema:nextItem ex:RED .
+
+ex:RED a schema:Course,
+        schema:ItemList,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:itemListElement ex:D,
+        ex:E ;
+    schema:name "(RED) AND (all of, any order)" ;
+    schema:nextItem ex:F .
+
