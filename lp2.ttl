@@ -6,14 +6,13 @@ hz:HZ_learning_path a schema:Course ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
     schema:courseCode "data-science-course-portfolio" ;
     schema:description "The platforms of the Information & Data Science Framework have developed a coordinated course offer that covers a wide array of topics." ;
+    schema:itemListElement hz:Module_1 ;
     schema:name "Helmholtz Data Science Course Portfolio" ;
-    schema:provider hz:Helmholtz ;
-    schema:syllabusSections hz:Module_1 .
+    schema:provider hz:Helmholtz .
 
 hz:Module_1 a schema:Course,
         schema:ItemList,
-        schema:ListItem,
-        schema:Syllabus ;
+        schema:ListItem ;
     dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
     schema:description "Unlock the potential of open science through courses on collaborative research practices and project management, open-source tools and software, and publishing ethically sound, reproducible, and transparent results." ;
     schema:itemListElement hz:TM1,
@@ -24,8 +23,16 @@ hz:Module_1 a schema:Course,
         hz:TM6,
         hz:TM7 ;
     schema:name "Open Research" ;
-    schema:nextItem hz:TM1 ;
     schema:teaches "Learn how to support open science" .
+
+hz:TM1 a schema:Course,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
+    schema:description "Boost your research efficiency with this workshop on Bash scripting and Git version control. Learn to automate tasks with custom scripts and track your work with Git" ;
+    schema:hasCourseInstance hz:TM1a ;
+    schema:name "(1) Kickstart Shell & Git" ;
+    schema:nextItem hz:TM2 ;
+    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/kickstart-shell-git/" .
 
 hz:TM1a a schema:CourseInstance ;
     dct:conformsTo <https://bioschemas.org/profiles/CourseInstance> ;
@@ -74,15 +81,6 @@ hz:TM7a a schema:CourseInstance ;
     schema:courseMode "online" ;
     schema:endDate "2025-10-17T17:00:00" ;
     schema:startDate "2025-10-17T09:00:00" .
-
-hz:TM1 a schema:Course,
-        schema:ListItem ;
-    dct:conformsTo <https://bioschemas.org/profiles/Course> ;
-    schema:description "Boost your research efficiency with this workshop on Bash scripting and Git version control. Learn to automate tasks with custom scripts and track your work with Git" ;
-    schema:hasCourseInstance hz:TM1a ;
-    schema:name "(1) Kickstart Shell & Git" ;
-    schema:nextItem hz:TM2 ;
-    schema:url "https://www.helmholtz-hida.de/en/lernen-vernetzen/data-science-course-portfolio/kickstart-shell-git/" .
 
 hz:TM2 a schema:Course,
         schema:ListItem ;
