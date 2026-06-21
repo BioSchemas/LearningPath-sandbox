@@ -1,0 +1,98 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ee: <https://elixir-europe.org/> .
+@prefix schema: <https://schema.org/> .
+
+ee:GA_learning_path a schema:Course ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:courseCode "data-management-for-researchers" ;
+    schema:description "The Data Management for Researchers learning path is designed to support researchers in developing strong, practical skills across the entire data lifecycle. " ;
+    schema:itemListElement ee:Topic_1,
+        ee:Topic_2,
+        ee:Topic_3 ;
+    schema:name "Data Management for Researchers" ;
+    schema:provider ee:ELIXIR_Europe .
+
+ee:TM11 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...learn about data management plans, from data stewards to FAIR principles" ;
+    schema:name "(1.1) ELIXIR-CONVERGE - The why of research data management" ;
+    schema:nextItem ee:TM12 ;
+    schema:url "https://www.youtube.com/watch?v=S7HfUe1hWcg" .
+
+ee:TM21 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...context of the BY-COVID project" ;
+    schema:name "(2.1) FAIRsharing in a nutshell" ;
+    schema:nextItem ee:TM22 ;
+    schema:url "https://fairsharing.org/educational#nutshell" .
+
+ee:TM31 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...ELIXIR Estonia will do a data management writing course." ;
+    schema:name "(3.1) ESTONIA / Bring Your Own Data Management Plan" ;
+    schema:nextItem ee:TM32 ;
+    schema:url "https://doi.org/10.5281/zenodo.7707813" .
+
+ee:Topic_1 a schema:Course,
+        schema:ItemList,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    schema:itemListElement ee:TM11,
+        ee:TM12 ;
+    schema:name "(TOPIC 1) Introduction to Data Management" ;
+    schema:nextItem ee:Topic_2 ;
+    schema:teaches "Understand the importance of Research Data Management..." .
+
+ee:TM12 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...necessary skills for effective organisation and management of research data." ;
+    schema:name "(1.2) Crash Course In Data Management" ;
+    schema:url "https://doi.org/10.5281/zenodo.16993293" .
+
+ee:TM22 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...Derived from the comprehensive “FAIR in Bio Practice” program,..." ;
+    schema:name "(2.2) FAIR for busy biologists" ;
+    schema:nextItem ee:TM23 ;
+    schema:url "https://carpentries-incubator.github.io/fair-for-busy-biologists/" .
+
+ee:TM23 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...funded by the ELIXIR-UK: FAIR Data Stewardship training ..." ;
+    schema:name "(2.3) RDMbites | FAIRification tools and templates" ;
+    schema:nextItem ee:Topic_3 ;
+    schema:url "https://youtu.be/SuuhcuPYOso" .
+
+ee:TM32 a schema:LearningResource,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/TrainingMaterial> ;
+    schema:description "...Derived from National Bioinformatics Infrastructure Sweden." ;
+    schema:name "(3.2) NBISweden/module-dmp-dm-practices" ;
+    schema:url "https://nbisweden.github.io/module-dmp-dm-practices/" .
+
+ee:Topic_2 a schema:Course,
+        schema:ItemList,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
+    schema:itemListElement ee:TM21,
+        ee:TM22,
+        ee:TM23 ;
+    schema:name "(TOPIC 2): FAIR data" ;
+    schema:nextItem ee:Topic_3 ;
+    schema:teaches "...introduces the FAIR principles and shows how to apply them in real research workflows." .
+
+ee:Topic_3 a schema:Course,
+        schema:ItemList,
+        schema:ListItem ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
+    schema:itemListElement ee:TM31,
+        ee:TM32 ;
+    schema:name "(TOPIC 3): (ONE OF) Data Management Plans" ;
+    schema:teaches "...introduces researchers to the creation and use of Data Management Plans. " .
+
