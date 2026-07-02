@@ -1,12 +1,12 @@
 # Learning Path sandbox
 
-authors: Phil Reed, Alban Gaignard, Leyla Jael Castro
+authors: Phil Reed, Alban Gaignard, Leyla Jael Castro, Michelle Brazas, Alex Smith, Patricia Palagi, Geert van Geest
 
-contributors: Nick Juty, Roman Baum
+contributors: Nick Juty, Roman Baum, Ginger Tsueng
 
 - Initially drafted the 20th of November 2025, as part of Bioschemas activities and ELIXIR BioHackathon Europe 2025.
 - Refined at de.NBI BioHackathon Germany 2025. [Report on BioHackrXiv](https://doi.org/10.37044/osf.io/un6cd_v1)
-- To be revised by the community.
+- To be revised by the community, including [Bioschemas Training Group](https://bioschemas.org/groups/Training).
 
 
 Any questions, please contact phil.reed@manchester.ac.uk, alban.gaignard@univ-nantes.fr
@@ -16,7 +16,7 @@ Report experiments to model Learning Paths with Schema.org ontology.
 
 ## Content 
 
-A jupyter notebook showing :
+A Jupyter notebook showing :
  - How Schema.org can be used, especially the HowTo, HowToSection, and HowToStep types and the required properties to properly define order between steps.
  - Some code to query (SPARQL and property path) the semantic annotations and retrieve for a given step the learning prerequesites.
  - Some code to transform Schema.org markup into a Mermaid diagram
