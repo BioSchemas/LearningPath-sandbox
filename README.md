@@ -23,6 +23,12 @@ A Jupyter notebook showing :
 
 ## Results 
 
+### Proposed Schema.org grounded model 
+
+The following figure drafts a how Schema.org classes can be used and linked together to represent this typical learning path. 
+
+<img width="2045" height="735" alt="lp-draft-metamodel" src="https://github.com/user-attachments/assets/4453022a-bbd6-4e31-9727-d925cd0b848a" />
+
 ### Fictitious example
 
 This [fictitious example](https://excalidraw.com/#room=ea0226411da9573d4713,xo1L4PsDpqMqUyzdcyvxSg) demonstrates the multiple ways to combine materials: AND (all of, in order), AND (all of, any order), OR (any of).
@@ -40,6 +46,9 @@ LP structure:
     - (D) German Lit
     - (E) Comparative Lit
   - (F) Compare German and English Lit
+
+
+
 
 ```turtle
 @prefix dct: <http://purl.org/dc/terms/> .
