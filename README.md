@@ -27,13 +27,13 @@ A Jupyter notebook showing :
 
 The following figure drafts a how Schema.org classes can be used and linked together to represent this typical learning path. 
 
-<img width="2045" height="735" alt="lp-draft-metamodel" src="https://github.com/user-attachments/assets/4453022a-bbd6-4e31-9727-d925cd0b848a" />
+![lp-draft-metamodel](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/master/lp-draft-metamodel.png)
 
 ### Fictitious example
 
 This [fictitious example](https://excalidraw.com/#room=ea0226411da9573d4713,xo1L4PsDpqMqUyzdcyvxSg) demonstrates the multiple ways to combine materials: AND (all of, in order), AND (all of, any order), OR (any of).
 
-![Excalidraw exported image](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/one-profile/lp0-source-image.png)
+![Excalidraw exported image](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/master/lp0-source-image.png)
 
 LP structure:
 
@@ -350,7 +350,7 @@ The code for this example is still in development. It is likely out-of-scope for
 
 This is from ELIXIR, [Data Management for Researchers](https://tess.elixir-europe.org/learning_paths/data-management-for-researchers), an excerpt of a learning path graph of learning materials, grouped by topic. There are some choices for the learner, where a topic contains a choice of materials from different countries, and the learner only needs to pick one. 
 
-![Course portfolio](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/one-profile/lp4-source-image.png)
+![Course portfolio](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/master/lp4-source-image.png)
 
 LP structure: 
 
