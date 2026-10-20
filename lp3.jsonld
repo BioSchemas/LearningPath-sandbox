@@ -33,7 +33,7 @@
     ],
     "http://purl.org/dc/terms/conformsTo": [
       {
-        "@id": "https://bioschemas.org/profiles/LearningPath"
+        "@id": "https://bioschemas.org/profiles/LearningPath/0.1-DRAFT"
       }
     ],
     "https://schema.org/courseCode": [
@@ -79,7 +79,7 @@
     ],
     "http://purl.org/dc/terms/conformsTo": [
       {
-        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+        "@id": "https://bioschemas.org/profiles/LearningPath/0.1-DRAFT"
       }
     ],
     "https://schema.org/itemListElement": [
@@ -113,7 +113,7 @@
     ],
     "http://purl.org/dc/terms/conformsTo": [
       {
-        "@id": "https://bioschemas.org/profiles/LearningPathModule"
+        "@id": "https://bioschemas.org/profiles/LearningPath/0.1-DRAFT"
       }
     ],
     "https://schema.org/itemListElement": [

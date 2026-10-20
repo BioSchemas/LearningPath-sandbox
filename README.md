@@ -56,7 +56,7 @@ LP structure:
 @prefix schema: <https://schema.org/> .
 
 ex:BLUE a schema:Course ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFT> ;
     schema:courseCode "LIT123" ;
     schema:description "This learning path aims to teach you the basics of comparative literature in English, German and across both. " ;
     schema:itemListElement ex:A,
@@ -145,7 +145,7 @@ LP structure:
 @prefix schema: <https://schema.org/> .
 
 gtn:GA_learning_path a schema:Course ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFT> ;
     schema:courseCode "GSA101" ;
     schema:description "This learning path aims to teach you the basics of Galaxy and analysis of sequencing data. " ;
     schema:itemListElement gtn:Module_1,
@@ -156,7 +156,7 @@ gtn:GA_learning_path a schema:Course ;
 gtn:Module_1 a schema:Course,
         schema:ItemList,
         schema:ListItem ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFT> ;
     schema:itemListElement gtn:TM11,
         gtn:TM12 ;
     schema:name "Module 1: Introduction to Galaxy" ;
@@ -252,7 +252,7 @@ Each course may have multiple course instances.
 
 ```turtle
 hz:HZ_learning_path a schema:Course ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFT> ;
     schema:courseCode "data-science-course-portfolio" ;
     schema:description "The platforms of the Information & Data Science Framework have developed a coordinated course offer that covers a wide array of topics." ;
     schema:itemListElement hz:Module_1 ;
@@ -262,7 +262,7 @@ hz:HZ_learning_path a schema:Course ;
 hz:Module_1 a schema:Course,
         schema:ItemList,
         schema:ListItem ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPathModule> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFTModule> ;
     schema:description "Unlock the potential of open science through courses on collaborative research practices and project management, open-source tools and software, and publishing ethically sound, reproducible, and transparent results." ;
     schema:itemListElement hz:TM1,
         hz:TM2,
@@ -371,7 +371,7 @@ LP structure:
 
 ```turtle
 ee:GA_learning_path a schema:Course ;
-    dct:conformsTo <https://bioschemas.org/profiles/LearningPath> ;
+    dct:conformsTo <https://bioschemas.org/profiles/LearningPath/0.1-DRAFT> ;
     schema:courseCode "data-management-for-researchers" ;
     schema:description "The Data Management for Researchers learning path is designed to support researchers in developing strong, practical skills across the entire data lifecycle. " ;
     schema:itemListElement ee:Topic_1,
