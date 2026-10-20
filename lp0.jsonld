@@ -1,0 +1,275 @@
+[
+  {
+    "@id": "http://example.org/A",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Introduction to Literature"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(A) Intro to Lit"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/GREEN"
+      }
+    ],
+    "https://schema.org/teaches": [
+      {
+        "@value": "Learn how to discuss literature"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "http://example.org/material/A"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/RED",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem",
+      "https://schema.org/ItemList"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPath"
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/D"
+      },
+      {
+        "@id": "http://example.org/E"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(RED) AND (all of, any order)"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/F"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/BLUE",
+    "@type": [
+      "https://schema.org/Course"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPath"
+      }
+    ],
+    "https://schema.org/courseCode": [
+      {
+        "@value": "LIT123"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "This learning path aims to teach you the basics of comparative literature in English, German and across both. "
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/A"
+      },
+      {
+        "@id": "http://example.org/GREEN"
+      },
+      {
+        "@id": "http://example.org/RED"
+      },
+      {
+        "@id": "http://example.org/F"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(BLUE) AND (all of, in order) Comparative lit in English and German"
+      }
+    ],
+    "https://schema.org/provider": [
+      {
+        "@id": "http://example.org/ExampleUniversity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/E",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "Comparative Literature methods"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(E) Comparative Lit"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "http://example.org/material/E"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/F",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "How to compare Literature in German and English"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(F) Compare German and English Lit"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/C",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "English Literature in British English"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(C) English Lit by GB"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "http://example.org/material/C"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/GREEN",
+    "@type": [
+      "https://schema.org/Course",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/LearningPath"
+      }
+    ],
+    "https://schema.org/itemListElement": [
+      {
+        "@id": "http://example.org/B"
+      },
+      {
+        "@id": "http://example.org/C"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(GREEN) OR (any of)"
+      }
+    ],
+    "https://schema.org/nextItem": [
+      {
+        "@id": "http://example.org/RED"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/B",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "English Literature in Canadian English"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(B) English Lit by CA"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "http://example.org/material/B"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/D",
+    "@type": [
+      "https://schema.org/LearningResource",
+      "https://schema.org/ListItem"
+    ],
+    "http://purl.org/dc/terms/conformsTo": [
+      {
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "German Literature"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "(D) German Lit"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@value": "http://example.org/material/D"
+      }
+    ]
+  }
+]
