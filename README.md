@@ -223,7 +223,7 @@ N1 -- nextItem --> N4
 
 This is a module of a learning path graph where each item is a course instance (event), not a training material. They provide a linear reduction which we will model. This reduction supports the prerequisites in a simplified way, and ignores courses from other modules (Open Oriented Programming). 
 
-![Course portfolio](https://www.helmholtz-hida.de/hida-files/_processed_/f/1/csm_Open_Research_01d85dd865.png)
+![Course portfolio](https://raw.githubusercontent.com/BioSchemas/LearningPath-sandbox/refs/heads/master/lp2-source-image.png)
 
 https://www.helmholtz-hida.de/en/discover-hida/helmholtz-information-data-science-framework/data-science-course-portfolio/
 
