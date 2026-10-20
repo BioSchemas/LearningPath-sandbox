@@ -5,7 +5,7 @@ authors: Phil Reed, Alban Gaignard, Leyla Jael Castro, Michelle Brazas, Alex Smi
 contributors: Nick Juty, Roman Baum, Ginger Tsueng
 
 - Initially drafted the 20th of November 2025, as part of Bioschemas activities and ELIXIR BioHackathon Europe 2025.
-- Refined at de.NBI BioHackathon Germany 2025. [Report on BioHackrXiv](https://doi.org/10.37044/osf.io/un6cd_v1)
+- Refined at de.NBI BioHackathon Germany 2025. [Report on BioHackrXiv](https://doi.org/10.37044/osf.io/un6cd_v1).
 - To be revised by the community, including [Bioschemas Training Group](https://bioschemas.org/groups/Training).
 
 
@@ -13,6 +13,19 @@ Any questions, please contact phil.reed@manchester.ac.uk, alban.gaignard@univ-na
 
 ## Aim of the repo
 Report experiments to model Learning Paths with Schema.org ontology. 
+
+### Use cases and motivation: Why should there be a model of learning paths?
+
+- Learning paths are a structured sequence of learning activities, resources, and assessments designed to guide a learner from basic concepts to advanced skills. 
+- They are crucial for reducing knowledge gaps and ensuring a coherent progression.
+  - Rapidly evolving landscape, requires structured and up-to-date knowledge
+  - Learners come from diverse backgrounds
+  - Learners integrate theory with practical skills
+- In life sciences research, ELIXIR, GTN, SIB, EMBL and many others have invested in developing protocols and materials for learning paths; for example, there has been a learning paths focus group in ELIXIR and they continue to feature in the 2027-28 work programme.
+- In many other domains, including RDM, physics and chemistry, learning paths are increasingly created and adopted.
+- As knowledge graphs and similar concepts facilitate the interoperability between data repositories and knowledge hubs, a machine-readable standard is required to exchange learning paths.
+- A Bioschemas definition of Learning Paths will support mTeSS-X, TeSSHub4EOSC, SIB, Expasy, RDMkit and many others to ingest, describe and exchange learning paths.
+- Further, a Bioschemas profile for Learning Paths will aid humans and LLMs to query Learning Paths with SPARQL or generate Learning Paths and populate training registries such as TeSS. 
 
 ## Content 
 
