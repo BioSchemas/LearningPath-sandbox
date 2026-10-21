@@ -489,6 +489,9 @@ direction TB
         ListItem[] itemListElement
         ListItem nextItem
     }
+    class ItemList["ItemList🔺"] {
+	    itemListElement
+    }
     class ListItem["ListItem🔺"] {
 	    nextItem
     }
@@ -497,6 +500,7 @@ direction TB
     class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
     Course <|-- new_LearningPath
+    ItemList <|-- new_LearningPath
     ListItem <|-- new_LearningPath
     LearningResource <|-- Course
     LearningResource <|-- bio_TrainingMaterial
@@ -523,6 +527,9 @@ direction TB
     }
     class bio_TrainingMaterial["bio:TrainingMaterial🟩"] {
     }
+    class ItemList["ItemList🔺"] {
+	    itemListElement
+    }
     class ListItem["ListItem🔺"] {
 	    nextItem
     }
@@ -533,10 +540,10 @@ direction TB
     class Intangible["Intangible🔺"] {
     }
     class Thing["Thing🔺"] {
-	    itemListElement
     }
     Course <|-- bio_Course
     Course <|-- new_LearningPath
+    ItemList <|-- new_LearningPath
     ListItem <|-- new_LearningPath
     CreativeWork <|-- LearningResource
     CreativeWork <|-- Course
@@ -547,5 +554,6 @@ direction TB
     Thing <|-- Event
     Thing <|-- CreativeWork
     Intangible <|-- ListItem
+    Intangible <|-- ItemList
     Thing <|-- Intangible
 ```
